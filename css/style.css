@@ -3,6 +3,8 @@
     --negro: #111;
     --gris: #343A40;
     --fuentePrincipal: 'Poppins', sans-serif;
+    --azul: rgb(20, 20, 40);
+    --azulFuerte: rgb(15, 14, 33);
 }
 
 html {
@@ -48,6 +50,16 @@ img {
     margin: 0 auto;
 }
 
+[class$="__contenedor"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+[class$="__heading"] {
+    color: var(--blanco);
+    text-align: center;
+}
+
 /*Header*/
 .header {
     width: 100%;
@@ -59,6 +71,7 @@ img {
     align-items: center;
     justify-content: center;
 }
+
 .navegacion {
     width: 100%;
     position: absolute;
@@ -78,6 +91,7 @@ img {
         align-items: center;
     }
 }
+
 .logo {
     width: 4rem;
     height: 4rem;
@@ -90,23 +104,28 @@ img {
         height: 8rem;
     }
 }
+
 .barra {
     text-align: center;
     width: 100%;
 }
+
 @media (min-width: 768px) {
     .barra {
         width: unset;
     }
 }
+
 .barra-contenido {
     padding: 0;
 }
+
 .barra-contenido li {
     display: block;
     margin-bottom: 1rem;
     line-height: 1;
 }
+
 @media (min-width: 768px) {
     .barra-contenido li {
         display: inline-block;
@@ -114,6 +133,7 @@ img {
         margin-bottom: unset;
     }
 }
+
 .barra-contenido a {
     font-size: 1.5rem;
     color: var(--blanco);
@@ -123,6 +143,7 @@ img {
     padding: 1rem;
     transition: all 0.3s;
 }
+
 .barra-contenido a:hover {
     background-color: rgba(255, 255, 255, 0.4);
     color: var(--negro);
@@ -134,6 +155,7 @@ img {
         width: unset;
     }
 }
+
 .contenido-central {
     text-align: center;
     color: var(--blanco);
@@ -152,11 +174,13 @@ img {
         font-size: 9rem;
     }
 }
+
 .contenido-central h1:hover {
     -webkit-text-stroke: 2px var(--blanco);
     color: transparent;
     cursor: pointer;
 }
+
 .contenido-central a {
     color: var(--blanco);
     display: inline-block;
@@ -167,10 +191,12 @@ img {
     line-height: 1;
     transition: all .3s;
 }
+
 .contenido-central a:hover {
     background-color: var(--blanco);
     color: var(--negro);
 }
+
 /* .back-video {
     position: absolute;
     top: 0;
@@ -205,3 +231,46 @@ img {
         height: 100%;
     }
 } */
+
+/*Main especialidades*/
+.servicios {
+    background-color: var(--azul);
+    padding: 5rem 0;
+}
+.servicios__contenedor {
+
+}
+.servicios__heading {
+    font-size: 5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--blanco);
+}
+.servicios__heading:hover {
+
+}
+.listados {
+    margin: 5rem 0;
+}
+.listados {
+
+}
+
+.listados__grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.listado {}
+
+.listado__heading {
+    font-size: 3.5rem;
+}
+
+.listado__imagen {
+    margin: auto;
+}
+
+.listado__informacion {
+    color: var(--blanco);
+    text-align: center;
+}
