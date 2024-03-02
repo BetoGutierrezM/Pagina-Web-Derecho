@@ -296,5 +296,64 @@
             </svg>
         </div>
     </section>
+
+    <section class="contacto">
+        <div class="contacto__waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f3f4f5" fill-opacity="1"
+                    d="M0,224L26.7,208C53.3,192,107,160,160,160C213.3,160,267,192,320,176C373.3,160,427,96,480,69.3C533.3,43,587,53,640,96C693.3,139,747,213,800,213.3C853.3,213,907,139,960,122.7C1013.3,107,1067,149,1120,154.7C1173.3,160,1227,128,1280,144C1333.3,160,1387,224,1413,256L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+        <div class="contacto__contenedor">
+            <h2 class="contacto__heading">Contactanos</h2>
+
+            <div class="form__contenido">
+                <div class="form__contenido2">
+                    <form action="#" class="formulario">
+                        <h3 class="formulario__heading">Envia un mensaje</h3>
+
+                        <div class="formulario__flex">
+                            <label for="formulario__nombre">Nombre</label>
+                            <input type="text" required="" placeholder="Tu nombre" class="formulario__campo"
+                                id="formulario__nombre">
+                        </div> <!--fin campo-->
+
+                        <div class="formulario__flex">
+                            <label for="formulario__correo">Correo</label>
+                            <input type="email" required="" placeholder="Tu E-mail" class="formulario__campo"
+                                id="formulario__correo">
+                        </div> <!--fin campo-->
+
+                        <div class="formulario__flex">
+                            <label for="formulario__telefono">Celular</label>
+                            <input type="tel" required="" placeholder="Tu numero celular" class="formulario__campo"
+                                id="formulario__telefono">
+                        </div> <!--fin campo-->
+
+                        <div class="formulario__flex">
+                            <label for="especialidades">Categoria</label>
+                            <select id="especialidades" name="especialidades" class="formulario__campo">
+                                <option value="Derecho Corporativo">Derecho Corporativo</option>
+                                <option value="Derecho Penal">Derecho Penal</option>
+                                <option value="Derecho Mercantil">Derecho Mercantil</option>
+                                <option value="Derecho Familiar">Derecho Familiar</option>
+                                <option value="Derecho Laboral">Derecho Laboral</option>
+                                <option value="Derecho Civil">Derecho Civil</option>
+                            </select>
+                        </div> <!--fin campo-->
+
+                        <div class="formulario__flex">
+                            <label for="formulario__mensaje" for">Mensaje</label>
+                            <textarea type="text" required="" placeholder="Mensaje" class="formulario__campo"
+                                id="formulario__mensaje" cols="30" rows="3"></textarea>
+                        </div> <!--fin campo-->
+                        <button class="formulario__boton">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
