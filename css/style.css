@@ -449,6 +449,9 @@ img {
     position: relative;
     padding-bottom: 7rem;
 }
+.contacto__waves {
+    translate: 0 -1px;
+}
 .contacto__heading {
     font-size: 5rem;
     padding: 5rem 0;
@@ -573,4 +576,7 @@ img {
 .redes__heading {
     font-size: 3.5rem;
     text-shadow: 4px 3px 10px rgba(255, 255, 255, 0.56);
+}
+.redes__imagen {
+    height: 30rem;
 }
