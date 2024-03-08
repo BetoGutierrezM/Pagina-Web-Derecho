@@ -172,6 +172,7 @@ img {
 
     .barra-contenido a {
         padding: 3rem 0.5rem;
+        margin-right: 1rem;
     }
 
     .barra {
@@ -179,6 +180,7 @@ img {
         top: 0;
         right: 0;
         bottom: 0;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -195,7 +197,11 @@ img {
     .barra-contenido {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: self-start;
+    }
+    .barra-contenido li {
+        margin-left: 0;
+        margin-right: 5rem;
     }
 }
 
@@ -434,10 +440,9 @@ img {
 }
 
 .nosotros__waves {
-    top: 0;
-    left: 0;
     overflow: hidden;
     width: 100%;
+    translate: 0 -8px;
 }
 
 .nosotros__heading {
@@ -476,14 +481,13 @@ img {
 .sobre-mi__imagen {
     margin: 0 auto;
 }
-
 .nosotros__waves-bottom {
+    /* position: absolute; */
     bottom: 0;
-    right: 0;
-    width: 100%;
-    translate: 0 4px;
-}
+    translate: 0 0;
 
+
+}
 /*Formulario*/
 
 .contacto {
@@ -491,11 +495,12 @@ img {
     position: relative;
     padding-bottom: 7rem;
 }
-
 .contacto__waves {
-    translate: 0 -1px;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    /* visibility: hidden; */
 }
-
 .contacto__heading {
     font-size: 5rem;
     padding: 5rem 0;
