@@ -75,6 +75,7 @@ img {
     align-items: center;
     justify-content: center;
 }
+
 .navegacion {
     width: 100%;
     position: fixed;
@@ -199,6 +200,7 @@ img {
         flex-direction: column;
         align-items: self-start;
     }
+
     .barra-contenido li {
         margin-left: 0;
         margin-right: 5rem;
@@ -288,9 +290,11 @@ img {
     padding-top: 8rem;
     position: relative;
 }
+
 .servicios__contenedor {
     width: 85%;
 }
+
 .servicios__waves {
     translate: 0 1rem;
 }
@@ -486,6 +490,7 @@ img {
 .sobre-mi__imagen {
     margin: 0 auto;
 }
+
 .nosotros__waves-bottom {
     /* position: absolute; */
     bottom: 0;
@@ -493,6 +498,7 @@ img {
 
 
 }
+
 /*Formulario*/
 
 .contacto {
@@ -500,12 +506,14 @@ img {
     position: relative;
     padding-bottom: 7rem;
 }
+
 .contacto__waves {
     position: absolute;
     top: 0;
     z-index: 4;
     /* visibility: hidden; */
 }
+
 .contacto__heading {
     font-size: 5rem;
     padding: 5rem 0;
@@ -629,18 +637,163 @@ img {
 }
 
 /*Redes*/
-/* .redes {
+.redes {
+    height: auto;
+    background-color: var(--azulFuerte);
+    padding-top: 6.5rem;
+}
+
+.redes__contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .redes__contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 .redes__heading {
     font-size: 3.5rem;
+    padding-bottom: 5rem;
     text-shadow: 4px 3px 10px rgba(255, 255, 255, 0.56);
+}
+@media (min-width: 768px) {
+    .redes__heading {
+        font-size: 5rem;
+    }
 }
 
 .redes__imagen {
-    height: 30rem; */
+    margin: 0 auto;
+}
+
+/*REDES*/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.instagram {
+    margin-top: 3.5rem;
+    margin-left: 4rem;
+    fill: #cc39a4;
+}
+
+.card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.facebook {
+    margin-top: 3.5rem;
+    margin-left: 2rem;
+    fill: #03A9F4;
+}
+
+.card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.whatsapp {
+    margin-top: 2.5rem;
+    margin-left: 4rem;
+    fill: #00ff00;
+}
+
+.card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.gmail {
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    fill: #f14336;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+    fill: white;
 }
